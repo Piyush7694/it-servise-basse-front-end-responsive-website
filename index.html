@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intern-project</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav id="mainNav" class="navbar">
+        <div class="first-navbar-container">
+            <div class="site-logo">
+                <img src="assets/logo..svg" alt="Description">
+            </div>
+            <a href="#" class="buy-button">Buy now</a>
+        </div>
+    </nav>
+
+    <!-- Second Nav Bar -->
+    <nav class="navbar secondary-navbar">
+    <div class="navbar-container">
+        <button class="menu-btn" onclick="document.querySelector('.secondary-navbar .nav-links').classList.toggle('active')">
+    &#9776;
+</button>
+        <div class="intech-logo">
+            <img style="height: 35px;" src="assets/Intech-logo.png" alt="Description">
+        </div>
+        <ul class="nav-links">
+           <li class="dropdown">
+                <a href="#">Home <span>&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Home One</a></li>
+                    <li><a href="#">Home Two</a></li>
+                    <li><a href="#">Home Three</a></li>
+                    <li><a href="#">Header Variation</a></li>
+                </ul>
+            </li>
+
+
+            <li class="dropdown">
+                <a href="#">About<span>&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Vision</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Services <span>&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">App Development</a></li>
+                    <li><a href="#">Cloud Services</a></li>
+                    <li><a href="#">Cyber Security</a></li>
+                    <li><a href="#">Data Management</a></li>
+                    <li><a href="#">IT Consultancy</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Pages <span>&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Case study</a></li>
+                    <li><a href="#">404 case</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">News <span>&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">News Style 01</a></li>
+                    <li><a href="#">News Style 02</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">news details</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li  id="searchToggleBtn" class="search-toggle-btn" aria-label="Toggle Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              
+            </li>
+        </ul>
+
+      
+    </div>
+</nav>
+
+
+    <!-- Search Overlay -->
+    <div id="searchOverlay" class="search-overlay">
+        <div class="search-overlay-content">
+            <!-- Close Button for Search Overlay -->
+            <button id="closeSearchBtn" class="close-search-btn" aria-label="Close Search">
+                <i class="fa-solid fa-x"></i>
+            </button>
+
+            <!-- Search Input and Button -->
+            <div class="search-input-group">
+                <input
+                    type="text"
+                    placeholder="Type here to Search..."
+                    class="search-input"
+                />
+                <button class="search-submit-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<div class="content-wrapper">
+    <div class="content-main">
+        <h5>We Provide IT-Services</h5>
+        <h1>Keep Secure Your <br> IT-Service</h1>
+        <p>Dolor sit amet consectetur elit sed do eiusmod tempor incidi <br> dunt labore et dolore magna. </p>
+        <button class="samebtn">
+                   Learn More
+                </button>
+        
+       
+    </div>
+    <div class="person-image-container">
+        <img src="assets/person-img.png" alt="Person" class="person-image" />
+    </div>
+</div>
+     <div class="appointment-section">
+                   <h2>Book Appointment</h2>
+
+        <p class="subtitle">Dolor sit amet consectetur elit sed do eiusmod tempor incididunt.</p>
+
+                <form>
+                <div class="input-row">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Your email" required>
+                    </div>
+                    <div  class="input-group">
+                        <select required>
+                            <option value="" disabled selected>—Please choose an option—</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <p>Lorem ipsum dolor amet constur adipisicing elit sed eusmod tempor incididuntdolore <br> magna aliqu enim minim veniam quis nostrud exercitation.</p>
+                    <button type="submit" class="get-appointment-btn">Get Appointment</button>
+                </div>
+            </form>
+        </div>
+
+         <div class="outer-container">
+        <div class="inner-container">
+        <h1 class="main-heading">World best IT-Services <br><span class="highlight">we provide</span></h1>
+
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon">
+                    <img src="assets/itservice.png" alt="Managed IT services icon">
+                    </div>
+                <h3 class="card-title">Managed IT services</h3>
+                <p class="card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+                <div class="hover-overlay"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">
+                    <img src="assets/multi-fun.png" alt="Multi-function services icon">
+                    </div>
+                <h3 class="card-title">Multi-function services</h3>
+                <p class="card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+                <div class="hover-overlay"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">
+                    <img src="assets/cyber.png" alt="Cyber Security icon">
+                    </div>
+                <h3 class="card-title">Cyber Security</h3>
+                <p class="card-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+                <div class="hover-overlay"></div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+      <section class="it-solutions-section">
+        <div class="content-left">
+            <h1>Best IT-Solutions company <br>
+           <span class="highlight">near the world</span></h1>
+            <p class="intro-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt tempora dolore magnam enim ad minim veniam quisquam, pariatur rerum.
+            </p>
+
+            <div class="tabs">
+                <button class="tab-button active">Our Mission</button>
+                <button class="tab-button">Our Vision</button>
+                <button class="tab-button">Awards Win</button>
+            </div>
+
+            <p style="color: #495057;" class="description-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt tempora dolore magnam enim ad minim veniam quisquam, pariatur rerum. Quos facere dolore, non quia voluptatibus esse cum dolore.
+            </p>
+
+            <ul class="features-list">
+                <li>consectetur elit sed do eius</li>
+                <li>consectetur elit sed</li>
+                <li>consectetur elit sed do</li>
+            </ul>
+
+            <button class="samebtn">
+                   read more
+                </button>
+        </div>
+
+        <div class="image-right">
+            <img src="assets/video-banner.png" alt="IT Solutions Team" class="main-image">
+            <div class="play-button-overlay">
+               <i class="fa-solid fa-play"></i>
+            </div>
+        </div>
+    </section>
+
+    <div class="company-container">
+    
+
+        <!-- Scroller Container -->
+        <div class="scroller-container">
+            <!-- The inner container holds the content and its duplicate for seamless looping -->
+            <div class="scroller-inner">
+                <!-- Original Set of Logos -->
+                <img src="https://el.commonsupport.com/newwp/intech/wp-content/uploads/2021/03/brand-2-5.png" alt="Envato Logo">
+                <img src="https://el.commonsupport.com/newwp/intech/wp-content/uploads/2021/03/brand-2-6.png" alt="Deloitte Logo">
+                <img src="https://el.commonsupport.com/newwp/intech/wp-content/uploads/2021/03/brand-2-1.png" alt="Sophia Logo">
+                <img src="https://el.commonsupport.com/newwp/intech/wp-content/uploads/2021/03/brand-2-2.png" alt="Ingredis Logo">
+                <img src="https://el.commonsupport.com/newwp/intech/wp-content/uploads/2021/03/brand-2-3.png" alt="Saturday Logo">
+                <img src="https://el.commonsupport.com/newwp/intech/wp-content/uploads/2021/03/brand-2-4.png" alt="Cheryl Logo">
+
+                <!-- Duplicate Set of Logos (for seamless looping) -->
+                 <img src="https://el.commonsupport.com/newwp/intech/wp-content/uploads/2021/03/brand-2-5.png" alt="Envato Logo">
+                <img src="https://el.commonsupport.com/newwp/intech/wp-content/uploads/2021/03/brand-2-6.png" alt="Deloitte Logo">
+                <img src="https://el.commonsupport.com/newwp/intech/wp-content/uploads/2021/03/brand-2-1.png" alt="Sophia Logo">
+                <img src="https://el.commonsupport.com/newwp/intech/wp-content/uploads/2021/03/brand-2-2.png" alt="Ingredis Logo">
+                <img src="https://el.commonsupport.com/newwp/intech/wp-content/uploads/2021/03/brand-2-3.png" alt="Saturday Logo">
+                <img src="https://el.commonsupport.com/newwp/intech/wp-content/uploads/2021/03/brand-2-4.png" alt="Cheryl Logo">
+            </div>
+        </div>
+    </div>
+
+      <div class="about-services-container">
+        <!-- Left Section: Image -->
+        <div class="left-section">
+            <img src="assets/person-with-leptop-1-1.jpg" alt="Man working on laptop">
+        </div>
+
+        <!-- Right Section: Content -->
+        <div class="right-section">
+    <div class="right-section-content">
+        <h2 class="main-heading">
+            We run all kinds of IT services <br>
+           <span class="highlight">that vow your success</span>
+        </h2>
+        <p>
+            Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua.
+        </p>
+        <p>
+            enim ad minim veniam quis nostrud exercitation ullamco laboris aliquip ex ea commodo consequat.
+        </p>
+      
+
+         <div class="buttons-container">
+                <button class="btn btn-primary">
+                    Read More
+                </button>
+               <button class="samebtn">
+                  contact us 
+                </button>
+            </div>
+
+
+    </div>
+
+    
+           
+        </div>
+    </div>
+
+<div class="main-content-wrapper"> <!-- Changed class name here -->
+        <div class="flex-container">
+            <!-- Left Section: Text and Button -->
+            <div class="experts-left-section"> <!-- Changed class name here -->
+                <h1>
+                    Meet with our <br> <span class="highlight">best experts</span>
+                </h1>
+                <p>
+                    Dolor sit amet consectetur elit sed eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco.
+                </p>
+                <button class="samebtn">
+                   Join Us
+                </button>
+            </div>
+
+            <!-- Right Section: Expert Cards Grid -->
+            <div class="experts-right-section"> <!-- Changed class name here -->
+                <!-- Expert Card 1 -->
+                <div class="expert-card">
+                    <div class="profile-pic-container">
+                          <img src="assets/team-1-1.jpg"
+                             alt="Expert Profile Picture"
+                             onerror="this.onerror=null;this.src='https://placehold.co/160x160/E0E0E0/333333?text=Image+Unavailable';"
+                        >
+                        <!-- Social Media Icons Overlay -->
+                        <div class="social-overlay">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <h3>Jose Day</h3>
+                    <p>CO-FOUNDER</p>
+                </div>
+
+                <!-- Expert Card 2 -->
+                <div class="expert-card">
+                    <div class="profile-pic-container">
+                        <img src="assets/team-1-2.jpg"
+                             alt="Expert Profile Picture"
+                             onerror="this.onerror=null;this.src='https://placehold.co/160x160/E0E0E0/333333?text=Image+Unavailable';"
+                        >
+                        <!-- Social Media Icons Overlay -->
+                        <div class="social-overlay">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <h3>Lee Harvey</h3>
+                    <p>CO-FOUNDER</p>
+                </div>
+
+                <!-- Expert Card 3 (Placeholder for third person in image) -->
+                <div class="expert-card">
+                    <div class="profile-pic-container">
+                          <img src="assets/team-1-3.jpg"
+                             alt="Expert Profile Picture"
+                             onerror="this.onerror=null;this.src='https://placehold.co/160x160/E0E0E0/333333?text=Image+Unavailable';"
+                        >
+                        <!-- Social Media Icons Overlay -->
+                        <div class="social-overlay">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <h3>Jane Doe</h3>
+                    <p>SENIOR ADVISOR</p>
+                </div>
+
+                 <!-- Expert Card 4 (Placeholder for fourth person in image) -->
+                <div class="expert-card">
+                    <div class="profile-pic-container">
+                          <img src="assets/team-1-4.jpg"
+                             alt="Expert Profile Picture"
+                             onerror="this.onerror=null;this.src='https://placehold.co/160x160/E0E0E0/333333?text=Image+Unavailable';"
+                        >
+                        <!-- Social Media Icons Overlay -->
+                        <div class="social-overlay">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <h3>John Smith</h3>
+                    <p>LEAD DEVELOPER</p>
+                </div>
+
+                 <!-- Expert Card 5 (Placeholder for fifth person in image) -->
+               
+                 
+            </div>
+        </div>
+    </div>
+
+<div class="project-container">
+        <!-- Section Title -->
+        <div class="section-title">
+            <h1>Thousands of projects completed <br>
+             <span class="highlight">in 20 countries</span> </h1>
+           
+        </div>
+
+        <!-- Category Filters - No Background, Reduced Spacing -->
+        <div class="category-filters">
+            <button class="filter-button" data-category="all">All</button>
+            <button class="filter-button" data-category="web-development">Web Development</button>
+            <button class="filter-button" data-category="design">Design</button>
+            <button class="filter-button" data-category="illustration">Illustration</button>
+            <button class="filter-button" data-category="photography">Photography</button>
+        </div>
+
+        <!-- Project Cards Grid - Adjusted to 3 columns on large screens -->
+        <div class="project-cards-grid" id="project-cards-grid">
+            <!-- Card 1 (Web Development) -->
+            <div class="card-container" data-category="web-development">
+                <div class="card-image-container">
+                    <img src="assets/project-1-1.jpg" alt="Project One">
+                    <div class="card-overlay">
+                        <span class="card-title-overlay"><i class="fa-solid fa-gears"></i></span>
+                    </div>
+                </div>
+                <div class="project-name-area">
+                    <h3>Virtual Integration</h3>
+                </div>
+            </div>
+
+            <!-- Card 2 (Design) -->
+            <div class="card-container" data-category="design">
+                <div class="card-image-container">
+                    <img src="assets/project-1-2.jpg" alt="Project Two">
+                    <div class="card-overlay">
+                        <span class="card-title-overlay"><i class="fa-solid fa-gears"></i></span>
+                    </div>
+                </div>
+                <div class="project-name-area">
+                    <h3>Managed IT</h3>
+                </div>
+            </div>
+
+            <!-- Card 3 (Illustration) -->
+            <div class="card-container" data-category="illustration,photography">
+                <div class="card-image-container">
+                    <img src="assets/project-1-3.jpg" alt="Project Three">
+                    <div class="card-overlay">
+                        <span class="card-title-overlay"><i class="fa-solid fa-gears"></i></span>
+                    </div>
+                </div>
+                <div class="project-name-area">
+                    <h3>Multi Function</h3>
+                </div>
+            </div>
+
+            <!-- Card 4 (Cyber Security) -->
+            <div class="card-container" data-category="cyber-security">
+                <div class="card-image-container">
+                    <img src="assets/project-1-4.jpg" alt="Project Four">
+                    <div class="card-overlay">
+                        <span class="card-title-overlay"><i class="fa-solid fa-gears"></i></span>
+                    </div>
+                </div>
+                <div class="project-name-area">
+                    <h3>Cyber Security</h3>
+                </div>
+            </div>
+
+
+        </div>
+
+            <button class="samebtn btn-1">all projects</button>
+    </div>
+
+
+    <div class="customers-container"> <!-- Renamed from main-container -->
+      <div class="section-title">
+            <h1>See what our customers</h1>
+             <span class="highlight">are saying...</span>
+           
+        </div>
+
+
+        <div class="slider-wrapper">
+            <!-- Slider Container -->
+            <div id="testimonial-slider">
+
+                <!-- Testimonial Card 1 -->
+                <div class="testimonial-card">
+                    <div class="flex-shrink-0">
+                        <img src="assets/testi-1-3.jpg" alt="Isabelle Cook">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            Lorem Ipsum dolor sit amet consectetr adipicing elit usmod tempor incidunt enim minim quis nostrud coir tation ullamco laboris nis aliquip.
+                        </p>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-author">Isabelle Cook  <span class="testimonial-role">/Designer</span></p>
+                       
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="testimonial-card">
+                    <div class="flex-shrink-0">
+                        <img src="assets/testi-1-1.jpg" alt="Peter Ramsey">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            Lorem ipsum dolor sit amet consectetr adipicing elit usmod tempor incidunt enim minim quis nostrud exer tation ullamco laboris nis aliquip.
+                        </p>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i> <!-- Half star example -->
+                        </div>
+                        <p class="testimonial-author">Peter Ramsey <span class="testimonial-role">/Designer</span></p>
+                        
+                    </div>
+                </div>
+
+                 <!-- Testimonial Card 3 (Example, initially hidden) -->
+                <div class="testimonial-card">
+                    <div class="flex-shrink-0">
+                        <img src="assets/testi-1-2.jpg" alt="John Doe">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            This is an excellent service! I am thoroughly impressed with the quality and support. Highly recommend!
+                        </p>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-author">John Doe <span class="testimonial-role">/CEO</span></p>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Left Navigation Arrow -->
+            <button id="prevBtn" class="nav-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <!-- Right Navigation Arrow -->
+            <button id="nextBtn" class="nav-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Navigation Dots (will be dynamically generated by JS) -->
+        <div id="dots-container" class="dots-container">
+        </div>
+    </div>
+
+     <section class="statistics-section">
+        <div class="statistics-container">
+            <div class="statistic-item">
+                <div class="statistic-number">90</div>
+                <div class="statistic-label">Project Complete</div>
+            </div>
+            <div class="statistic-item">
+                <div class="statistic-number">216</div>
+                <div class="statistic-label">Satisfied Clients</div>
+            </div>
+            <div class="statistic-item">
+                <div class="statistic-number">35</div>
+                <div class="statistic-label">Experienced Staffs</div>
+            </div>
+            <div class="statistic-item">
+                <div class="statistic-number">10</div>
+                <div class="statistic-label">International Awards</div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="main-content-wrapper"> <!-- Changed class name here -->
+        <div class="flex-container">
+            <!-- Left Section: Text and Button -->
+            <div class="experts-left-section"> <!-- Changed class name here -->
+                <h1>
+                    latest news & <br> <span class="highlight">insights</span>
+                </h1>
+                <p>
+                    Dolor sit amet consectetur elit sed eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco.
+                </p>
+               <div>
+                    <p> <i class="fa-solid fa-user-tie"></i> <span class="light-text">by</span> admin <span class="light-text">March 13,2020</span></h1>
+                </div>
+            </div>
+
+                <div class="image-right insight-card  card-container">
+                    <img src="assets/project-1-1.jpg" alt="Project One">
+
+
+                   <div class="card-overlay">
+                       <span class="card-title-overlay"><i class="fa-solid fa-gears"></i></span>
+                   </div>
+                </div>
+
+        </div>
+    </div>
+    
+        <div class="contact-no-container">
+            <div class="contact-no-content">
+                <h1>Make a contact with our IT staffs. Call Us?</h1>
+                <p>+91 1234567890</p>
+               
+            </div>
+        </div>
+<div class="footer-main">
+
+            <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/Intech-logo.png" alt="Description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptatum.</p>
+                <div class="footer-social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h2>quick Links</h2>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Our Blog</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contact Us</a>
+               
+            </div>
+            <div class="footer-services">
+                <h2>Services</h2>
+                <p>Multi-function Services</p>
+                <p>Managed IT-Services</p>
+                <p>Cyber Security</p>
+                <p>Data Management</p>
+                <p>Cloud Computing</p>
+            </div>
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p>Email: info@example.com</p>
+                <p>Flat 20, Reynolds Neck, North Hele <br> naville, FV77 8WS</p>
+                <p>Phone: +91 1234567890</p>
+            </div>
+            </div>
+<div class="footer-bottom">
+    <p>&copy; 2023 Intech. All rights reserved.</p>
+    <p>Terms of Service  | Privacy Policy</p>
+</div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
