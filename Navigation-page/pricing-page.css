@@ -1,0 +1,87 @@
+.pricing-plans {
+    text-align: center;
+    padding: 40px 20px;
+ 
+    background-size: cover;
+    background-position: center center;
+    margin-top: -230px;
+    padding-top: 355px;
+    padding: 120px 20px;
+    min-height: 750px;
+   
+   
+}
+
+.pricing-container {
+    margin-top: 250px;
+    
+}
+
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;         /* Allow cards to wrap to next line */
+    justify-content: center; /* Center cards */
+    align-items: center;
+    gap: 2rem;               /* Add space between cards */
+    width: 100%;
+ 
+    margin: 0;               /* Remove any extra margin */
+    overflow-x: auto;        /* Prevent unwanted scrollbars */
+}
+
+.pricing-card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    height: 500px;
+    width: 320px;            
+    max-width: 90vw;         
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    
+}
+.upper-content{
+    height: 55%;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem 2rem;
+    padding-bottom: 0;
+
+
+}
+
+.weekly-card {
+    background-image: url('assets/pricing-card-bg.png');
+   
+}
+.weekly-card p{
+    color: white !important;
+}
+.upper-content p{
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+}
+#p-bold{
+    font-weight: bold;
+    color: #777;
+   
+    
+}
+    .rate{
+        font-size: 2rem;
+        color: black;
+        font-weight: 500;
+    }
+    #mid-rate{
+        color:#20dfe3;
+    }
+.lower-content{
+padding-top: 2rem;
+  
+}
+.pricing-cards button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
