@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pricing-page</title>
+    <link rel="stylesheet" href="pricing-page.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+
+<body class="font-sans">
+
+    
+
+    <!-- Header Contact Info Bar -->
+    <div class="header-contact-bar">
+        <div>
+            We are reliable & consistent IT-Solution team
+        </div>
+        <div class="header-contact-bar-info">
+            <span>
+                <i class="far fa-clock"></i> Mon-Sat 9.00 - 18.00
+            </span>
+            <span>
+                <i class="fas fa-phone-alt"></i> ( 251 ) 235-3256
+            </span>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="main-nav" id="main-nav">
+           <div class="intech-logo">
+            <img style="height: 45px; margin-left: 100px;" src="/public/assets/dark-praxis-logp.png" alt="Description">
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links">
+                    <li>
+                <a href="/public/index.html">Home </a>
+              
+            </li>
+            <li class="dropdown">
+                <a href="About-page.html">About<span>&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="About-page.html">Our Team</a></li>
+                    <li><a href="About-page.html">Mission</a></li>
+                    <li><a href="About-page.html">Vision</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="Services-page.html">Services <span>&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Services-page.html">Web Development</a></li>
+                    <li><a href="Services-page.html">App Development</a></li>
+                    <li><a href="Services-page.html">Cloud Services</a></li>
+                    <li><a href="#">Cyber Security</a></li>
+                    <li><a href="#">Data Management</a></li>
+                    <li><a href="#">IT Consultancy</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#"  class="current-page">Pages <span>&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="pricing-page.html">Pricing</a></li>
+                    <li><a href="FAQs-page.html">FAQs</a></li>
+                    <li><a href="#">Case study</a></li>
+                    <li><a href="#">404 case</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="/components/News.html" ></a>News <span>&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/components/News.html">News Style 01</a></li>
+                    <li><a href="/components/News.html">News Style 02</a></li>
+                    <li><a href="/components/News.html">Our Blog</a></li>
+                    <li><a href="/components/News.html">News Details</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+             <li><button class="search-icon-button" id="open-search-modal">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button></li>
+            <li><button class="samebtn">
+                Get Quote
+            </button></li>
+        </ul>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+
+        <!-- Mobile Menu (initially hidden) -->
+        <ul id="mobile-menu" class="mobile-menu">
+            <li><a href="/public/index.html">Home</a></li>
+            <li class="dropdown-mobile-item">
+                <a href="About-page.html">About<span>&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="About-page.html">Our Team</a></li>
+                    <li><a href="About-page.html">Mission</a></li>
+                    <li><a href="About-page.html">Vision</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-mobile-item">
+                <a href="Services-page.html">Services <span>&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Services-page.html">Web Development</a></li>
+                    <li><a href="Services-page.html">App Development</a></li>
+                    <li><a href="Services-page.html">Cloud Services</a></li>
+                    <li><a href="#">Cyber Security</a></li>
+                    <li><a href="#">Data Management</a></li>
+                    <li><a href="#">IT Consultancy</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-mobile-item">
+                <a href="#"  class="current-page">Pages <span>&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="pricing-page.html">Pricing</a></li>
+                    <li><a href="FAQs-page.html">FAQs</a></li>
+                    <li><a href="#">Case study</a></li>
+                    <li><a href="#">404 case</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-mobile-item">
+                <a href="/components/News.html">News <span>&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/components/News.html">News Style 01</a></li>
+                    <li><a href="/components/News.html">News Style 02</a></li>
+                    <li><a href="/components/News.html">Our Blog</a></li>
+                    <li><a href="/components/News.html">News Details</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="mobile-search-input">
+                <!-- Search input for mobile menu, unchanged as it's part of the overlay trigger logic -->
+                <div class="search-input-group">
+                    <input
+                        type="text"
+                        placeholder=" Search..."
+                        class="search-input"
+                    />
+                    <button class="search-submit-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+<!-- Overlay Search Modal HTML -->
+<div class="search-overlay" id="search-overlay">
+    <div class="search-modal">
+        <button class="close-button" id="close-search-modal">&times;</button>
+       
+        <div class="search-input-container">
+            <input type="text" class="search-input" placeholder="Type to search...">
+            <button class="search-submit-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+    <!-- Hero Section/Banner -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>pricing page</h1>
+            <p>Home / <span style="font-weight: 600;">Pricing</span></p>
+        </div>
+    </section>
+
+
+<div class="pricing-plans">
+    <div class="pricing-container">
+        <h1>Best IT-Solutions company <br>
+           <span class="highlight">near the world</span></h1>
+
+        <div class="pricing-cards">
+
+        <div class="pricing-card" id="card-1"> 
+           <div class="upper-content">
+           <p id="p-bold">DAILY PLAN <br> <span class="rate">  $20</span>/day</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  </p>
+            <button class="blue-btn" >Select plan</button>
+           </div>
+           <div class="lower-content">
+            <p>Unlimited campaigns</p>
+            <p>Basic donor</p>
+            <p>Team fundraising</p>
+           </div>
+            
+
+        </div>
+        <div class="pricing-card"  id="card-2">
+             <div  class="upper-content weekly-card">
+             <p id="p-bold">WEEKLY PLAN <br> <span id="mid-rate" class="rate"> $30</span>/day</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <button class="samebtn">Select plan</button>
+           </div>
+           <div class="lower-content">
+            <p>Unlimited campaigns</p>
+            <p>Basic donor</p>
+            <p>Team fundraising</p>
+           </div>
+        </div>
+        <div class="pricing-card"  id="card-3">
+            <div class="upper-content">
+           <p id="p-bold">MONTHLY PLAN <br> <span class="rate">$50</span>/day</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+            <button class="blue-btn">Select plan</button>
+           </div>
+           <div class="lower-content">
+            <p>Unlimited campaigns</p>
+            <p>Basic donor</p>
+            <p>Team fundraising</p>
+           </div>
+        </div>
+
+        </div>
+    </div>
+            
+</div>
+
+
+
+     <!--  contect container for the two sections -->
+    <div class="make-a-contect">
+        
+        <div class="left-contect-section">
+            <div class="main-heading">
+
+                <h4>We run all kinds of IT services <br>
+                    <span class="highlight">that vow your success</span>
+                </h4>
+                <div style=" display: inline-block;" class="samebtn">Contact us</div>
+            </div>
+        </div>
+
+
+        <div class="right-contect-section">
+         
+            <h4>Make a contact with <br> our  IT staffs. <br> Call US?</h2>
+            <p>304-587-3407</p>
+        </div>
+    </div>
+
+
+
+    <div class="footer-main">
+
+            <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/public/assets/light-praxis-logo.png" alt="Description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptatum.</p>
+                <div class="footer-social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h2>quick Links</h2>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Our Blog</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contact Us</a>
+               
+            </div>
+            <div class="footer-services">
+                <h2>Services</h2>
+                <p>Multi-function Services</p>
+                <p>Managed IT-Services</p>
+                <p>Cyber Security</p>
+                <p>Data Management</p>
+                <p>Cloud Computing</p>
+            </div>
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p>Email: info@example.com</p>
+                <p>Flat 20, Reynolds Neck, North Hele <br> naville, FV77 8WS</p>
+                <p>Phone: +91 1234567890</p>
+            </div>
+            </div>
+<div class="footer-bottom">
+    <p>&copy; 2023 Intech. All rights reserved.</p>
+    <p>Terms of Service  | Privacy Policy</p>
+</div>
+   <!-- Scroll to Top Button (similar to the one in the image) -->
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
+                class="scroll-to-top-button"
+                aria-label="Scroll to top">
+            <i class="fa-solid fa-angle-up fa-flip"></i>
+        </button>
+
+
+    <script src="components.js"></script>
+</body>
+
+</html>

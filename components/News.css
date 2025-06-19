@@ -1,0 +1,176 @@
+
+
+     
+
+body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5; /* Light grey background for the page */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          
+        }
+
+       
+      
+
+        
+        /* News Section */
+  /* Apply to all elements for consistent box model behavior */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Your existing news-section CSS */
+.news-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Now 100% includes padding */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* ... rest of your CSS ... */
+
+        .news-section h2 {
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 700; /* font-bold */
+            color: #1f2937; /* gray-800 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+
+        .news-cards-container {
+            margin-top: 2rem; /* mt-8 */
+            display: grid; /* Using grid for consistent gaps */
+            grid-template-columns: 1fr; /* Single column by default */
+            gap: 2rem; /* gap-8 */
+        }
+
+        .news-card {
+            background-color: #f9fafb; /* gray-50 */
+            border-radius: 0.5rem; /* rounded-lg */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            overflow: hidden;
+            display: flex;
+            flex-direction: column; /* Stacks on small screens */
+        }
+
+        .news-card-image {
+            width: 100%;
+            height: 12rem; /* h-48 */
+            flex-shrink: 0;
+        }
+
+        .news-card-image img {
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
+            
+        }
+
+        .news-card-content {
+            width: 100%;
+            padding: 1.5rem; /* p-6 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .news-card-content h3 {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 600; /* font-semibold */
+            color: #1f2937; /* gray-800 */
+            margin-bottom: 0.75rem; /* mb-3 */
+        }
+
+        .news-card-content p {
+            color: #4b5563; /* gray-600 */
+            font-size: 0.875rem; /* text-sm */
+            margin-bottom: 1rem; /* mb-4 */
+            line-height: 1.625; /* leading-relaxed */
+        }
+
+        .news-card-content a {
+            color: #2563eb; /* blue-600 */
+            text-decoration: none;
+            font-weight: 500; /* font-medium */
+            align-self: flex-start;
+        }
+
+        .news-card-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (min-width: 768px) { /* md breakpoint */
+            .header-contact-bar {
+                flex-direction: row;
+                padding-left: 2rem; /* px-8 */
+                padding-right: 2rem; /* px-8 */
+            }
+
+            .main-nav {
+                padding-left: 2rem; /* px-8 */
+                padding-right: 2rem; /* px-8 */
+            }
+
+            .main-nav-container {
+                flex-direction: row;
+            }
+
+            .main-nav-logo {
+                margin-bottom: 0; /* md:mb-0 */
+            }
+
+            .nav-links {
+                display: flex; /* md:flex */
+            }
+
+            .mobile-menu-button {
+                display: none; /* md:hidden */
+            }
+
+            .mobile-menu {
+                display: none !important; /* Force hide on medium+ screens */
+            }
+
+            .search-quote-buttons {
+                display: flex; /* md:flex */
+            }
+
+            .hero-section {
+                padding-left: 2rem; /* px-8 */
+                padding-right: 2rem; /* px-8 */
+            }
+
+            .news-card {
+                flex-direction: row; /* md:flex-row */
+            }
+
+            .news-card-image {
+                width: 50%; /* md:w-1/2 */
+                height: auto; /* md:h-auto */
+            }
+            .news-card-image img {
+                border-bottom-left-radius: 0.5rem; /* md:rounded-bl-lg */
+                border-top-right-radius: 0; /* md:rounded-tr-none */
+            }
+
+            .news-card-content {
+                width: 50%; /* md:w-1/2 */
+            }
+        }
+
+        @media (min-width: 1024px) { /* lg breakpoint */
+            .nav-links {
+                gap: 2rem; /* lg:space-x-8 */
+            }
+        }
