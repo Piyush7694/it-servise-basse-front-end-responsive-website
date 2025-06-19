@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news-section</title>
+    <link rel="stylesheet" href="News.css">
+    <link rel="stylesheet" href="Reusable.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="font-sans">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+         <div class="site-logo">
+                <img src="assets/logo..svg" alt="Description">
+            </div>
+        <button class="buy-now-button">
+            Buy now
+        </button>
+    </div>
+
+    <!-- Header Contact Info Bar -->
+    <div class="header-contact-bar">
+        <div>
+            We are reliable & consistent IT-Solution team
+        </div>
+        <div class="header-contact-bar-info">
+            <span>
+                <i class="far fa-clock"></i> Mon-Sat 9.00 - 18.00
+            </span>
+            <span>
+                <i class="fas fa-phone-alt"></i> ( 251 ) 235-3256
+            </span>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="main-nav">
+        <div class="main-nav-container">
+            <!-- Logo -->
+            <div class="intech-logo">
+            <img style="height: 45px;" src="assets/Intech-Dark-Version.png" alt="Description">
+        </div>
+
+            <!-- Navigation Links with Dropdowns (Desktop) -->
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="../index.html">Home <span>&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../index.html">Home One</a></li>
+                        <li><a href="#">Home Two</a></li>
+                        <li><a href="#">Home Three</a></li>
+                        <li><a href="#">Header Variation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="About-page.html">About<span>&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="About-page.html">Our Team</a></li>
+                        <li><a href="About-page.html">Mission</a></li>
+                        <li><a href="About-page.html">Vision</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                       <a href="Services-page.html">Services <span>&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Services-page.html">Web Development</a></li>
+                        <li><a href="Services-page.html">App Development</a></li>
+                        <li><a href="Services-page.html">Cloud Services</a></li>
+                        <li><a href="#">Cyber Security</a></li>
+                        <li><a href="#">Data Management</a></li>
+                        <li><a href="#">IT Consultancy</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Pages <span>&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pricing-page.html">Pricing</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Case study</a></li>
+                        <li><a href="#">404 case</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">News <span>&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Navigation-page/news-style-01.html">News Style 01</a></li>
+                        <li><a href="Navigation-page/news-style-02.html">News Style 02</a></li>
+                        <li><a href="Navigation-page/our-blog.html">Our Blog</a></li>
+                        <li><a href="Navigation-page/news-details.html">news details</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button (Hamburger) -->
+            <div class="mobile-menu-toggle">
+                <button id="mobile-menu-button" class="mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu (kept as flat list for simplicity, can be expanded with nested mobile dropdowns if needed) -->
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Pages</a>
+                <a href="#" class="active">News</a>
+                <a href="#">Contact</a>
+                <div class="get-quote-wrapper">
+                    <button class="samebtn" style="width: 100%;">Get Quote</button>
+                </div>
+            </div>
+
+            <!-- Search Icon and Get Quote Button -->
+            <div class="search-quote-buttons">
+                <button class="search-icon-button">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="samebtn">
+                    Get Quote
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section/Banner -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>News Style 01</h1>
+            <p>Home / <span style="font-weight: 600;">News Style 01</span></p>
+        </div>
+    </section>
+
+    <!-- Content Area: News Section with Image and Text Cards -->
+    <section class="news-section">
+        <h2>Latest News & Articles</h2>
+        <div class="news-cards-container">
+            <!-- Example News Card 1: Image Left, Content Right -->
+            <div class="news-card">
+                <!-- Image Section -->
+                <div class="news-card-image">
+                    <img src="assets/news-1.png" alt="News Image 1">
+                </div>
+                <!-- Content Section -->
+                <div class="news-card-content">
+                    <h3>Latest Tech Innovations</h3>
+                    <p>Discover the groundbreaking advancements shaping the future of technology and how they impact our daily lives. From AI to sustainable energy, stay ahead of the curve.</p>
+                    <a href="#">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Example News Card 2: Image Left, Content Right -->
+            <div class="news-card">
+                <!-- Image Section -->
+                <div class="news-card-image">
+                    <img src="assets/news-2.png" alt="News Image 2">
+                </div>
+                <!-- Content Section -->
+                <div class="news-card-content">
+                    <h3>Digital Transformation Trends</h3>
+                    <p>Explore how businesses are embracing digital transformation for growth, efficiency, and enhanced customer experiences in a rapidly evolving market.</p>
+                    <a href="#">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Example News Card 3: Image Left, Content Right -->
+            <div class="news-card">
+                <!-- Image Section -->
+                <div class="news-card-image">
+                    <img src="assets/news-3.png" alt="News Image 3">
+                </div>
+                <!-- Content Section -->
+                <div class="news-card-content">
+                    <h3>Cybersecurity Insights 2025</h3>
+                    <p>Stay informed about the latest threats and best practices in cybersecurity. Learn how to protect your data and systems from emerging online dangers.</p>
+                    <a href="#">Read More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Main contect container for the two sections --> 
+
+
+    <div class="make-a-contect">
+      
+        <div class="left-contect-section">
+            <div class="main-heading">
+                
+                <h4>We run all kinds of IT services <br>
+                    <span class="highlight">that vow your success</span>
+                </h4>
+                <!-- Contact Us button -->
+                <div style=" display: inline-block;" class="samebtn">Contact us</div>
+            </div>
+        </div>
+
+       
+        <div class="right-contect-section">
+         
+            <h2>Make a contact with our IT staffs. Call US?</h2>
+           
+            <p>304-587-3407</p>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+<div class="footer-main">
+
+            <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/Intech-logo.png" alt="Description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptatum.</p>
+                <div class="footer-social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h2>quick Links</h2>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Our Blog</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contact Us</a>
+               
+            </div>
+            <div class="footer-services">
+                <h2>Services</h2>
+                <p>Multi-function Services</p>
+                <p>Managed IT-Services</p>
+                <p>Cyber Security</p>
+                <p>Data Management</p>
+                <p>Cloud Computing</p>
+            </div>
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p>Email: info@example.com</p>
+                <p>Flat 20, Reynolds Neck, North Hele <br> naville, FV77 8WS</p>
+                <p>Phone: +91 1234567890</p>
+            </div>
+            </div>
+<div class="footer-bottom">
+    <p>&copy; 2023 Intech. All rights reserved.</p>
+    <p>Terms of Service  | Privacy Policy</p>
+</div>
+
+
+<script src="News.js"></script>
+</body>
+
+</html>
